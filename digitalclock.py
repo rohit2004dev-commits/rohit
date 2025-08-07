@@ -8,6 +8,19 @@ def update_clock():
 
 root = tk.Tk()
 root.title("Digital Clock")
+root.configure(bg='gray20')  # Set window background
 
-clock_label = tk.Label(root, font=('Arial', 48), bg='black', fg='white')
-clock_label.pack(padx=20, pady=20)
+clock_label = tk.Label(
+    root,
+    font=('Arial', 48, 'bold'),
+    bg='black',
+    fg='cyan',
+    bd=10,
+    relief='ridge',
+    padx=30,
+    pady=30
+)
+clock_label.pack(padx=40, pady=40)
+
+update_clock()
+root.mainloop()
